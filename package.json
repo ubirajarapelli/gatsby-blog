@@ -9,16 +9,22 @@
     "gatsby-image": "^2.2.34",
     "gatsby-plugin-manifest": "^2.2.30",
     "gatsby-plugin-offline": "^3.0.24",
+    "gatsby-plugin-playground": "^1.0.6",
     "gatsby-plugin-react-helmet": "^3.1.16",
     "gatsby-plugin-sharp": "^2.3.4",
+    "gatsby-plugin-styled-components": "^3.1.14",
     "gatsby-source-filesystem": "^2.1.39",
+    "gatsby-transformer-remark": "^2.6.42",
     "gatsby-transformer-sharp": "^2.3.6",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "styled-components": "^4.4.1",
+    "styled-icons": "^9.0.1"
   },
   "devDependencies": {
+    "env-cmd": "^10.0.1",
     "prettier": "^1.19.1"
   },
   "keywords": [
@@ -27,7 +33,8 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "developz": "gatsby develop",
+    "develop": "env-cmd --file .env.development --fallback gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
